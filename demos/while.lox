@@ -1,0 +1,19 @@
+var i = 0;
+
+while(i < 10) {
+  print(i, '\n')
+  i = i + 1
+}
+
+assert(i == 10)
+
+i = 0
+print('');
+while(i < 10) {
+  if(i > 5) {
+    break;
+  }
+  i = i + 1
+}
+
+assert(i == 5)

@@ -1,0 +1,10 @@
+var i = 0
+while(i < 10) {
+  if(i > 5) {
+    break;
+  } else {
+    i = i + 1
+  }
+}
+
+assert(i == 6)

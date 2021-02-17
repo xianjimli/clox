@@ -1,0 +1,18 @@
+class Animal {
+  init(name) {
+    this.name = name
+  }
+
+  speak(msg) {
+    print(this.name, ":", msg)
+  }
+}
+
+class Dog < Animal {
+  init(name) {
+    super.init(name)
+  }
+}
+
+var a = Dog("WangCai")
+a.speak("hello");

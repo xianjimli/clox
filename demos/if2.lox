@@ -1,0 +1,5 @@
+if(0) {
+  print("then\n")
+} else {
+  print("else\n")
+}

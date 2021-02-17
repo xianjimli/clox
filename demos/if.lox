@@ -1,0 +1,7 @@
+if(1) {
+  print("if\n")
+}
+
+if(0) {
+  print("if\n")
+}

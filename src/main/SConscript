@@ -1,0 +1,18 @@
+import os
+import sys
+
+BIN_DIR=os.environ['BIN_DIR'];
+APP_SRC_ROOT=os.environ['SRC_DIR'];
+
+env=DefaultEnvironment().Clone();
+
+INCLUDE_PATH = [
+  APP_SRC_ROOT
+]
+
+env['CPPPATH'] = INCLUDE_PATH
+env['LIBS'] = ['interpreter', 'parser', 'base']
+
+env.Program(os.path.join(BIN_DIR, 'ilox'), 'interpreter.c');
+
+

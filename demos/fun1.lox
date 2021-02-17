@@ -1,0 +1,7 @@
+
+fun test(a, b) {
+  return a + b
+}
+
+assert(test(1,2)==3)
+
